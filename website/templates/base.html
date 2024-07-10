@@ -1,0 +1,30 @@
+<!--
+Wszystko co będzie na każdej stronie, tj np pasek nawigacyjny itd 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+</head>
+<body>
+
+    <!-- Zawiera pasek nawigacyjny -->
+    {% include 'navbar.html' %}
+
+
+    <!-- Zawiera wiadomości -->
+    {% if messages %}
+        {% for message in messages %}
+            {{ message }}
+        {% endfor %}
+    {% endif %}
+
+    <!-- Definiuje blok zawartości, który może być nadpisany w szablonach dziedziczących. -->
+    {% block content %}
+    {% endblock %}
+    
+</body>
+</html>
