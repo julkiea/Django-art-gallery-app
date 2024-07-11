@@ -1,0 +1,1 @@
+# Django art gallery app 🚀
